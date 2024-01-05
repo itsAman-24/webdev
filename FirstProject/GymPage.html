@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .navbar{
+           /* background-color: rgb(53, 55, 55); */
+           margin-top: 0px;
+           box-sizing: border-box; 
+           
+           
+           
+        }
+
+        body{
+            background-color: black;
+            /* width: 400px;
+            height: 300px;  */
+            /* margin: auto;  */
+            background-repeat: no-repeat;
+            margin: 0;
+            box-sizing: border-box;
+            color: white;
+            
+        }
+
+        .navbar ul {
+            overflow: auto;
+            padding: 25px;
+            /* margin-left: 200px; */
+            margin-top: 8px;
+            float: right;
+        }
+
+        .navbar li{
+            float: left;
+            list-style: none;
+            padding: 25px;
+            
+        } 
+        .navbar li a{
+            padding: 15px;
+            padding-top: 6px;
+            text-decoration: none;
+            color: rgb(249, 253, 250);
+            font-size: large;
+        
+        } 
+
+        #searchinput {
+            padding-top:5px;
+            margin-top: 9px;
+            margin-right: 20px;
+            float: right;
+            border-radius: 10px;
+        }
+
+        #image {
+            background-color: rgb(11, 237, 64);
+            width: 20px;
+            height: 25px;
+            float: right;
+            padding-left: 1px;
+            margin-top: 25px;
+            border-radius: 20px;
+           
+        }
+        
+        .navbar li a:hover {
+            color: green;
+            cursor: pointer;
+        }
+
+        /* .navbar span:hover {
+            color: rgb(243, 7, 86);
+            cursor: pointer;
+        } */
+
+        .footer:hover {
+            cursor: pointer;
+
+        }
+
+
+        
+        .navbar span {
+            color: rgb(243, 7, 86);
+            padding: 12px;
+            margin: 7px;
+            margin-top: 8px;
+            margin-left: 0px;
+            padding-bottom: 23px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 45px;
+            float: left;
+        }
+
+        .img {
+           
+            border-radius: 5px;
+            height: 430px;
+            padding-top: 80px;
+            padding-left: 800px;
+            border-radius: 46%;
+        }
+        .footer {
+            background-color: black;
+            margin-bottom: 15px;
+            color: rgb(12, 231, 12);
+            /* margin-bottom: 0px; */
+        }
+        
+        .footer h2 {
+            display: inline;
+            margin-bottom: 30px;
+            
+        }
+
+        #searchinput {
+            margin-top: 23px;
+        }
+
+        #email,#pass,#number,#register,#submit {
+            color: black;
+            background-color: rgb(145, 197, 145);
+        }
+
+        input[type=text] {
+            margin: 3px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+        }
+        input[type=email] {
+            margin: 5px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+        }
+        input[type=password] {
+            margin: 3px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+        }
+        input[type=submit] {
+            margin: 5px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+        }
+   
+        input[type=register] {
+            margin: 5px;
+            margin-bottom: 15px;
+            border-radius: 30px;
+        }
+   
+  
+    </style>
+</head>                                                     
+<body>
+
+    <header>
+        <nav class="navbar">
+            <span>Fitness Trainer</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.XfpHTcAIArn3ylD5hBhHggHaKe&pid=Api&P=0&h=220" alt="search" id="image">
+            <input type="text" id="searchinput" placeholder="Search on the web">
+        </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+            <img class="img" src="https://tse1.mm.bing.net/th?id=OIP.nccEPvE0sj-Myb_dFBODpAHaEo&pid=Api&P=0&h=220" alt="">
+    </main> 
+
+    <footer class="footer">
+        <h2>Register here</h2>
+        <form action="Backend.php">
+        E-mail <input type="email" id="email" placeholder="Your Email"><br>
+        password <input type="password" id="pass" placeholder="Enter Your Password"><br>
+        Contact <input type="text" id="number" placeholder="Mob.No"><br>
+        Are you sure for registration <input type="checkbox" id="register"checked>
+        <input type="submit" id="submit">
+        </form>
+    </footer>
+    
+
+
+
+
+</body>
+</html>
