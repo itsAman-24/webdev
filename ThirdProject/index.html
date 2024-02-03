@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://kit.fontawesome.com/30de586aff.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/30de586aff.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cello World</title>
     <style>
-        html{
-          font-size: 62.5%;
-        }
+      html {
+        font-size: 62.5%;
+      }
 
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            max-width: 100%;
-        }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
 
-      .sbkabaap{
+      .sbkabaap {
         width: 99.9vw;
 
         /* border: 2px solid green; */
@@ -25,7 +28,7 @@
         flex-direction: column;
       }
 
-      .navbar{
+      .navbar {
         /* background: linear-gradient(317deg,green,rgb(244, 244, 247),orange); */
         display: flex;
         /* border: 2px solid red; */
@@ -35,13 +38,13 @@
         /* justify-content: space-between; */
       }
 
-      .navitem{
+      .navitem {
         padding: 5px;
         margin: 3px;
         /* border: 1px solid black; */
       }
 
-      #search{
+      #search {
         margin-left: 8rem;
         width: 80rem;
         height: 5rem;
@@ -53,10 +56,9 @@
         font-weight: bolder;
         padding: 2rem;
         border: none;
-
       }
 
-      #tag{
+      #tag {
         background-color: red;
         padding-top: 1.3rem;
         color: white;
@@ -66,7 +68,7 @@
         border-radius: 0.5rem;
       }
 
-      #icons{
+      #icons {
         /* border: 0.1rem solid black; */
         margin-left: 20rem;
         width: 30rem;
@@ -78,27 +80,27 @@
         justify-content: space-between;
       }
 
-      .star{
+      .star {
         font-size: x-large;
         margin-top: 1.2rem;
       }
 
-      .star:hover{
+      .star:hover {
         font-size: xx-large;
       }
 
-      #corporateText{
+      #corporateText {
         font-size: 2rem;
       }
 
-      .FirstInnerNavBar{
-        background: linear-gradient(4deg,green,rgb(244, 244, 247),orange);
+      .FirstInnerNavBar {
+        background: linear-gradient(4deg, green, rgb(244, 244, 247), orange);
         /* border: 1px solid blue; */
         display: flex;
         flex-direction: row;
       }
 
-      .SecondInnerNavBar{
+      .SecondInnerNavBar {
         margin-left: 4.5rem;
         margin-right: 4.5rem;
         height: 4rem;
@@ -111,14 +113,13 @@
         font-size: 1.9rem;
       }
 
-      .intro{
+      .intro {
         margin-top: 0.5rem;
         height: 57rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: red;
-        
       }
 
       /* .innerintro{
@@ -126,7 +127,7 @@
         background-color: aqua;
       } */
 
-      #firstintro{
+      #firstintro {
         width: 70rem;
         height: 5rem;
         display: flex;
@@ -134,26 +135,24 @@
         color: white;
         justify-content: space-around;
         padding-top: 1.4rem;
-
       }
 
-      .introText{
-        font-family: Georgia, 'Times New Roman', Times, serif;
+      .introText {
+        font-family: Georgia, "Times New Roman", Times, serif;
         font-size: 2rem;
         border: n;
       }
 
-      img{
+      img {
         width: 100vw;
         height: 100%;
-        
       }
 
       #firstintro {
         border: none;
       }
 
-      .bestSeller{
+      .bestSeller {
         /* border: 0.2rem solid red; */
         height: 85rem;
         margin-top: 0.3rem;
@@ -161,7 +160,7 @@
         flex-direction: column;
       }
 
-      #firstBest{
+      #firstBest {
         /* border: 0.1rem solid black; */
         height: 13rem;
         text-align: center;
@@ -169,52 +168,51 @@
         padding-top: 2.6rem;
       }
 
-      #secondBest{
+      #secondBest {
         display: flex;
         border: 0.1rem solid black;
         height: 65rem;
         /* background-color: bisque; */
       }
 
-      .addToCard{
+      .addToCard {
         background-color: white;
-        background: linear-gradient(198deg,white,rgb(237, 198, 126));
+        background: linear-gradient(198deg, white, rgb(237, 198, 126));
         height: 60rem;
         display: flex;
         flex-direction: column;
-        box-shadow: .4rem .4rem 6rem rgb(85, 88, 90);
-        margin: .9rem;
-        border-radius: .8rem;
+        box-shadow: 0.4rem 0.4rem 6rem rgb(85, 88, 90);
+        margin: 0.9rem;
+        border-radius: 0.8rem;
       }
 
-      button{
+      button {
         height: 4.7rem;
         color: rgb(248, 246, 246);
         font-size: medium;
         font-weight: bold;
         background-color: rgb(80, 12, 4);
         margin: 1rem;
-        margin-top: .5rem;
-        border-radius: .3rem;
+        margin-top: 0.5rem;
+        border-radius: 0.3rem;
         border-radius: 1rem;
         border: none;
-        
       }
-      
-      button:hover{
+
+      button:hover {
         color: rgb(13, 1, 1);
         cursor: pointer;
         background-color: rgb(248, 241, 240);
-        border: .2rem solid red;
+        border: 0.2rem solid red;
       }
 
-      .img1{
+      .img1 {
         height: 36rem;
         /* border-radius: 4rem; */
         padding: 1rem;
       }
 
-      img:hover{
+      img:hover {
         image-rendering: crisp-edges;
         cursor: pointer;
         /* animation: forwards;
@@ -222,157 +220,151 @@
         animation-direction: normal; */
       }
 
-      
-      .cardDetail{
-        margin: .2rem;
+      .cardDetail {
+        margin: 0.2rem;
         margin-top: 2.19rem;
         /* border: .2rem solid green; */
         height: 16rem;
       }
 
-      .details{
+      .details {
         margin: 1rem;
         /* border: .1rem solid rgb(98, 98, 17); */
         height: 3rem;
       }
 
-      #firstDetail{
-       font-size: 1.9rem;
-       /* font-family: ; */
-       padding: .4rem;
-       
+      #firstDetail {
+        font-size: 1.9rem;
+        /* font-family: ; */
+        padding: 0.4rem;
       }
 
-      #secondDetail{
+      #secondDetail {
         display: flex;
         flex-direction: row;
         font-size: 2.2rem;
       }
 
-      #thirdDetail{
+      #thirdDetail {
         display: flex;
         flex-direction: row;
       }
 
-      .discount{
+      .discount {
         /* border: .1rem solid red; */
         width: 8rem;
         height: 2.9rem;
-
       }
 
-      #discountedprice{
+      #discountedprice {
         text-decoration: line-through;
         width: 6rem;
       }
 
-      #actualprice{
+      #actualprice {
         margin-left: 1rem;
         width: 6rem;
       }
 
-      #discounted{
+      #discounted {
         margin-left: 3rem;
         background-color: rgb(238, 55, 55);
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         font-size: 1.8rem;
         color: white;
         text-align: center;
-        padding-top: .4rem;
+        padding-top: 0.4rem;
       }
 
-      .color{
+      .color {
         width: 2.6rem;
         height: 2.6rem;
         border-radius: 2rem;
-        margin: .6rem;
-        border: .1rem solid rgb(11, 0, 0);
+        margin: 0.6rem;
+        border: 0.1rem solid rgb(11, 0, 0);
       }
 
-      #green{
+      #green {
         background-color: green;
         /* width: 2rem;
         height: 2rem; */
       }
 
-      #blue{
+      #blue {
         background-color: blue;
         /* width: 2rem;
         height: 2rem; */
       }
 
-      #black{
+      #black {
         background-color: black;
         /* width: 2rem;
         height: 2rem; */
       }
 
-      .SecondInnerNavBar{
+      .SecondInnerNavBar {
         position: sticky;
       }
 
-      .collage{
+      .collage {
         margin-top: none;
         display: flex;
         flex-direction: column;
         height: 60rem;
-        border: .1rem solid aqua;
+        border: 0.1rem solid aqua;
         max-width: 100%;
       }
-      
-      .collage img{
+
+      .collage img {
         height: 30rem;
         width: 35rem;
       }
 
-      .collage .firstPart{
+      .collage .firstPart {
         display: flex;
         justify-content: center;
         height: 10rem;
       }
 
-      .collage .firstPart span{
+      .collage .firstPart span {
         font-size: 6rem;
       }
 
-      .collage .secondPart{
+      .collage .secondPart {
         display: flex;
         flex-direction: row;
       }
-
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="sbkabaap">
-
-        <div class="navbar" id="navigation">
-           <div class="FirstInnerNavBar">
-            <div class="navitem" id="tag">cello</div>
-            <div> <input type="text" id="search" placeholder="Search"></div>
-            <div class="navitem" id="icons">
-              <div class="star"> <i class="fa-regular fa-user"></i> </div>
-              <div class="star"> <i class="fa-regular fa-heart"></i> </div>
-              <div class="star"> <i class="fa-solid fa-cart-shopping"></i> </div>
-              <span class="corporate" id="corporateText">Corporate</span>
-              
-            </div>
-          </div>
-
-          <div class="SecondInnerNavBar">
-            <div class="text">Drink ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
-            <div class="text">Dinner ware</div>
+      <div class="navbar" id="navigation">
+        <div class="FirstInnerNavBar">
+          <div class="navitem" id="tag">cello</div>
+          <div><input type="text" id="search" placeholder="Search" /></div>
+          <div class="navitem" id="icons">
+            <div class="star"><i class="fa-regular fa-user"></i></div>
+            <div class="star"><i class="fa-regular fa-heart"></i></div>
+            <div class="star"><i class="fa-solid fa-cart-shopping"></i></div>
+            <span class="corporate" id="corporateText">Corporate</span>
           </div>
         </div>
 
-        <div class="intro" id="introduction">
-          <div class="stickyji">
+        <div class="SecondInnerNavBar">
+          <div class="text">Drink ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+          <div class="text">Dinner ware</div>
+        </div>
+      </div>
+
+      <div class="intro" id="introduction">
+        <div class="stickyji">
           <div class="innerintro" id="firstintro">
             <div class="introText">Aman</div>
             <div class="introText">Aman</div>
@@ -381,111 +373,115 @@
             <div class="introText">Aman</div>
             <div class="introText">Aman</div>
           </div>
-          </div>
-
-          <img src="./Assests/republic.jpg" alt="">
         </div>
 
+        <img src="./Assests/republic.jpg" alt="" />
+      </div>
 
-        <div class="bestSeller" id="best">
-          <div class="innerbest" id="firstBest">Best Sellers</div>
+      <div class="bestSeller" id="best">
+        <div class="innerbest" id="firstBest">Best Sellers</div>
 
-          <div class="innerbest" id="secondBest">
-
+        <div class="innerbest" id="secondBest">
           <div class="addToCard">
             <!-- <img id="hoverimg" src="./Assests/saucepan.jpg" alt=""> -->
-            <img class="img1" src="./Assests/bottle.jpg" alt="">
-             <button>QUICK ADD</button>
-              <div class="cardDetail">
-               <div class="details" id="firstDetail">Lorem ipsum dolor sit hello 750ml</div>
-               <div class="details" id="secondDetail">
-                 <div class="discount" id="discountedprice">$49.3</div>
-                 <div class="discount" id="actualprice">$40.3</div>
-                 <div class="discount" id="discounted"> SAVE $9 </div>
-               </div>
-               <div class="details" id="thirdDetail">
-                 <div class="color" id="green"></div>
-                 <div class="color" id="blue"></div>
-                 <div class="color" id="black"></div>
-               </div>
+            <img class="img1" src="./Assests/bottle.jpg" alt="" />
+            <button>QUICK ADD</button>
+            <div class="cardDetail">
+              <div class="details" id="firstDetail">
+                Lorem ipsum dolor sit hello 750ml
+              </div>
+              <div class="details" id="secondDetail">
+                <div class="discount" id="discountedprice">$49.3</div>
+                <div class="discount" id="actualprice">$40.3</div>
+                <div class="discount" id="discounted">SAVE $9</div>
+              </div>
+              <div class="details" id="thirdDetail">
+                <div class="color" id="green"></div>
+                <div class="color" id="blue"></div>
+                <div class="color" id="black"></div>
+              </div>
             </div>
           </div>
 
-            <div class="addToCard">
-            <img class="img1" src="./Assests/classicbottle.jpg" alt="">
+          <div class="addToCard">
+            <img class="img1" src="./Assests/classicbottle.jpg" alt="" />
             <button>QUICK ADD</button>
             <div class="cardDetail">
-              <div class="details" id="firstDetail">Lorem ipsum dolor sit hello 750ml</div>
+              <div class="details" id="firstDetail">
+                Lorem ipsum dolor sit hello 750ml
+              </div>
               <div class="details" id="secondDetail">
                 <div class="discount" id="discountedprice">$49.3</div>
                 <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted"> SAVE $9 </div>
+                <div class="discount" id="discounted">SAVE $9</div>
               </div>
               <div class="details" id="thirdDetail">
                 <div class="color" id="green"></div>
                 <div class="color" id="blue"></div>
                 <div class="color" id="black"></div>
               </div>
-             </div>
             </div>
+          </div>
 
-            <div class="addToCard">
-            <img class="img1" src="./Assests/desert.jpg" alt="">
+          <div class="addToCard">
+            <img class="img1" src="./Assests/desert.jpg" alt="" />
             <button>QUICK ADD</button>
             <div class="cardDetail">
-              <div class="details" id="firstDetail">Lorem ipsum dolor sit hello 750ml</div>
+              <div class="details" id="firstDetail">
+                Lorem ipsum dolor sit hello 750ml
+              </div>
               <div class="details" id="secondDetail">
                 <div class="discount" id="discountedprice">$49.3</div>
                 <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted"> SAVE $9 </div>
+                <div class="discount" id="discounted">SAVE $9</div>
               </div>
               <div class="details" id="thirdDetail">
                 <div class="color" id="green"></div>
                 <div class="color" id="blue"></div>
                 <div class="color" id="black"></div>
               </div>
-             </div>
             </div>
+          </div>
 
-            <div class="addToCard">
-            <img class="img1" src="./Assests/grinder.jpg" alt="">
+          <div class="addToCard">
+            <img class="img1" src="./Assests/grinder.jpg" alt="" />
             <button>QUICK ADD</button>
             <div class="cardDetail">
-              <div class="details" id="firstDetail">Lorem ipsum dolor sit hello 750ml</div>
+              <div class="details" id="firstDetail">
+                Lorem ipsum dolor sit hello 750ml
+              </div>
               <div class="details" id="secondDetail">
                 <div class="discount" id="discountedprice">$49.3</div>
                 <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted"> SAVE $9 </div>
+                <div class="discount" id="discounted">SAVE $9</div>
               </div>
               <div class="details" id="thirdDetail">
                 <div class="color" id="green"></div>
                 <div class="color" id="blue"></div>
                 <div class="color" id="black"></div>
               </div>
-             </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collage">
+        <div class="firstPart">
+          <span>Check This Out</span>
+        </div>
+
+        <div class="secondPart">
+          <div class="firstimgRow">
+            <img src="./Assests/icecream.jpg" alt="" />
+            <img src="./Assests/cup.jpg" alt="" />
+            <img src="./Assests/grinder.jpg" alt="" />
+            <img src="./Assests/plates.jpg" alt="" />
+            <img src="./Assests/candyjar.jpg" alt="" />
+            <img src="./Assests/icecream.jpg" alt="" />
+          </div>
           
-  
-          </div>
         </div>
-
-        <div class="collage">
-          <div class="firstPart">
-            <span>Check This Out</span>
-          </div>
-
-          <div class="secondPart">
-          <img src="./Assests/icecream.jpg" alt="">
-          <img src="./Assests/cup.jpg" alt="">
-          <img src="./Assests/grinder.jpg" alt="">
-          <img src="./Assests/plates.jpg" alt="">
-          <img src="./Assests/candyjar.jpg" alt="">
-          <img src="./Assests/icecream.jpg" alt="">
-          </div>
-
-        </div>
-
-    
+      </div>
     </div>
-</body>
+  </body>
 </html>
