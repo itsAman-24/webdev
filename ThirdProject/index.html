@@ -8,340 +8,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cello World</title>
-    <style>
-      html {
-        font-size: 62.5%;
-      }
-
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        max-width: 100%;
-      }
-
-      .sbkabaap {
-        width: 99.9vw;
-
-        /* border: 2px solid green; */
-        display: flex;
-        flex-direction: column;
-      }
-
-      .navbar {
-        /* background: linear-gradient(317deg,green,rgb(244, 244, 247),orange); */
-        display: flex;
-        /* border: 2px solid red; */
-        flex-direction: column;
-        width: 100vw;
-        height: 16rem;
-        /* justify-content: space-between; */
-      }
-
-      .navitem {
-        padding: 5px;
-        margin: 3px;
-        /* border: 1px solid black; */
-      }
-
-      #search {
-        margin-left: 8rem;
-        width: 80rem;
-        height: 5rem;
-        margin-top: 2rem;
-        border-radius: 3.5rem;
-        /* background: linear-gradient(198deg,green,white,orange); */
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        padding: 2rem;
-        border: none;
-      }
-
-      #tag {
-        background-color: red;
-        padding-top: 1.3rem;
-        color: white;
-        font-size: 4rem;
-        margin-left: 3.5rem;
-        font-weight: bolder;
-        border-radius: 0.5rem;
-      }
-
-      #icons {
-        /* border: 0.1rem solid black; */
-        margin-left: 20rem;
-        width: 30rem;
-        height: 6rem;
-        margin-top: 1.7rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .star {
-        font-size: x-large;
-        margin-top: 1.2rem;
-      }
-
-      .star:hover {
-        font-size: xx-large;
-      }
-
-      #corporateText {
-        font-size: 2rem;
-      }
-
-      .FirstInnerNavBar {
-        background: linear-gradient(4deg, green, rgb(244, 244, 247), orange);
-        /* border: 1px solid blue; */
-        display: flex;
-        flex-direction: row;
-      }
-
-      .SecondInnerNavBar {
-        margin-left: 4.5rem;
-        margin-right: 4.5rem;
-        height: 4rem;
-        /* border: 1px solid orange; */
-        margin-top: 4.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        color: black;
-        font-size: 1.9rem;
-      }
-
-      .intro {
-        margin-top: 0.5rem;
-        height: 57rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: red;
-      }
-
-      /* .innerintro{
-        position: sticky;
-        background-color: aqua;
-      } */
-
-      #firstintro {
-        width: 70rem;
-        height: 5rem;
-        display: flex;
-        flex-direction: row;
-        color: white;
-        justify-content: space-around;
-        padding-top: 1.4rem;
-      }
-
-      .introText {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 2rem;
-        border: n;
-      }
-
-      img {
-        width: 100vw;
-        height: 100%;
-      }
-
-      #firstintro {
-        border: none;
-      }
-
-      .bestSeller {
-        /* border: 0.2rem solid red; */
-        height: 78rem;
-        margin-top: 0.3rem;
-        display: flex;
-        flex-direction: column;
-      }
-
-      #firstBest {
-        /* border: 0.1rem solid black; */
-        height: 13rem;
-        text-align: center;
-        font-size: 6rem;
-        padding-top: 2.6rem;
-      }
-
-      #secondBest {
-        display: flex;
-        /* border: 0.1rem solid black; */
-        height: 65rem;
-        /* background-color: bisque; */
-      }
-
-      .addToCard {
-        background-color: white;
-        background: linear-gradient(198deg, white, rgb(237, 198, 126));
-        height: 60rem;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0.4rem 0.4rem 6rem rgb(85, 88, 90);
-        margin: 0.9rem;
-        border-radius: 0.8rem;
-      }
-
-      button {
-        height: 4.7rem;
-        color: rgb(248, 246, 246);
-        font-size: medium;
-        font-weight: bold;
-        background-color: rgb(80, 12, 4);
-        margin: 1rem;
-        margin-top: 0.5rem;
-        border-radius: 0.3rem;
-        border-radius: 1rem;
-        border: none;
-      }
-
-      button:hover {
-        color: rgb(13, 1, 1);
-        cursor: pointer;
-        background-color: rgb(248, 241, 240);
-        border: 0.2rem solid red;
-      }
-
-      .img1 {
-        height: 36rem;
-        /* border-radius: 4rem; */
-        padding: 1rem;
-      }
-
-      img:hover {
-        image-rendering: crisp-edges;
-        cursor: pointer;
-        /* animation: forwards;
-        animation-delay: 1s;
-        animation-direction: normal; */
-      }
-
-      .cardDetail {
-        margin: 0.2rem;
-        margin-top: 2.19rem;
-        /* border: .2rem solid green; */
-        height: 16rem;
-      }
-
-      .details {
-        margin: 1rem;
-        /* border: .1rem solid rgb(98, 98, 17); */
-        height: 3rem;
-      }
-
-      #firstDetail {
-        font-size: 1.9rem;
-        /* font-family: ; */
-        padding: 0.4rem;
-      }
-
-      #secondDetail {
-        display: flex;
-        flex-direction: row;
-        font-size: 2.2rem;
-      }
-
-      #thirdDetail {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .discount {
-        /* border: .1rem solid red; */
-        width: 8rem;
-        height: 2.9rem;
-      }
-
-      #discountedprice {
-        text-decoration: line-through;
-        width: 6rem;
-      }
-
-      #actualprice {
-        margin-left: 1rem;
-        width: 6rem;
-      }
-
-      #discounted {
-        margin-left: 3rem;
-        background-color: rgb(238, 55, 55);
-        border-radius: 0.5rem;
-        font-size: 1.8rem;
-        color: white;
-        text-align: center;
-        padding-top: 0.4rem;
-      }
-
-      .color {
-        width: 2.6rem;
-        height: 2.6rem;
-        border-radius: 2rem;
-        margin: 0.6rem;
-        border: 0.1rem solid rgb(11, 0, 0);
-      }
-
-      #green {
-        background-color: green;
-        /* width: 2rem;
-        height: 2rem; */
-      }
-
-      #blue {
-        background-color: blue;
-        /* width: 2rem;
-        height: 2rem; */
-      }
-
-      #black {
-        background-color: black;
-        /* width: 2rem;
-        height: 2rem; */
-      }
-
-      .SecondInnerNavBar {
-        position: sticky;
-      }
-
-      .collage {
-        margin-top: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        height: 110rem;
-        /* border: 0.1rem solid aqua; */
-        max-width: 100%;
-      }
-
-      .secondPart img {
-        height: 30rem;
-        width: 35rem;
-        margin: 1.3rem;
-        border-radius: 4rem;
-        box-shadow: 0.10rem 0.1rem 3rem rgb(229, 144, 8);
-      }
-
-      .collage .firstPart {
-        display: flex;
-        justify-content: center;
-        height: 10rem;
-      }
-
-      .collage .firstPart span {
-        padding-top: 2rem;
-        font-size: 6rem;
-      }
-
-      .collage .secondPart {
-        display: flex;
-        flex-direction: row;
-        margin-top: 5rem;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
   </head>
+
   <body>
     <div class="sbkabaap">
       <div class="navbar" id="navigation">
@@ -381,7 +51,7 @@
           </div>
         </div>
 
-        <img src="./Assests/republic.jpg" alt="" />
+        <img src="https://celloworld.com/cdn/shop/files/FLASK-BANNER-1880-x-720PX_GIF_a2e3bb32-d692-44a5-8ba1-892c924ab0af.gif?v=1693039209&width=2000" alt="" />
       </div>
 
       <div class="bestSeller" id="best">
@@ -473,7 +143,7 @@
 
       <div class="collage">
         <div class="firstPart">
-          <span>Check This Out</span>
+          <span>Shop by Category</span>
         </div>
 
         <div class="secondPart">
@@ -496,6 +166,150 @@
           </div>
         </div>
       </div>
+
+      <div class="shopthelook">
+        <div class="firsttext">Shop the Look</div>
+          <div class="secondimg">
+            <img src="./Assests/saucepan.jpg" alt="">
+            <img src="./Assests/utansils.jpg" alt="">
+            <img src="./Assests/candyjar.jpg" alt="">
+            <img src="./Assests/juiceBottles.jpg" alt="">
+
+            <div class="icon">
+              <div class="icon1"> <i class="fa fa-long-arrow-up" ></i> </div>
+              <div class="icon2"> <i class="fa fa-user-circle-o" ></i> </div>
+              <div class="icon3"> <i class="fa fa-heart-o" ></i> </div>
+            </div>
+            
+            </div>
+
+            <div class="thirdtext">
+              <div class="text1">Lorem, ipsum.</div>
+              <div class="text2">Lorem, ipsum dolor.</div>
+              <div class="text3">Lorem, ipsum.</div>
+              <div class="text4">Lorem ipsum dolor sit.</div>
+            </div>
+        </div>
+
+
+        <div class="giftarea">
+          <div class="gift">
+            <img src="https://celloworld.com/cdn/shop/files/GIF-NEW_8a56b34a-b420-4c7d-9b7a-1f018ef8c7de.gif?v=1696922461&width=2000" alt="">
+          </div>
+
+          <div class="textarea">
+             <div class="gifttext">Free shipping on order above $100</div>
+             <div class="gifttext">Lorem, ipsum dolor.</div>
+             <div class="gifttext">Lorem, ipsum.</div>
+             <div class="gifttext">Lorem, ipsum dolor.</div>
+          </div>
+
+        </div>
+
+        <footer>
+          <div class="footerdiv">
+          <div class="div" id="div1">
+            <span>For Order related Queries</span>
+
+            <div class="innerdiv" id="innerdiv1">
+              <i class="fa fa-calendar"></i>
+              <div class="tutu">Monday-Friday</div>
+            </div>
+
+            <div class="innerdiv" id="innerdiv2">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <div class="tutu">9:30 AM to 6:00 PM</div> 
+            </div>
+
+            <div class="innerdiv" id="innerdiv3">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <div class="tutu underline">7400001965</div>
+            </div>
+
+            <div class="innerdiv" id="innerdiv4">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <div class="tutu underline">support@celloworld.com</div>
+            </div>
+
+            <div class="innerdiv" id="innerdiv5">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              
+            </div>
+
+
+          </div>
+
+          <div class="div" id="div2">
+            <span>Explore</span>
+
+            <div class="textdiv" id="textdiv1">Build your Kitchen</div>
+            <div class="textdiv">Lorem, ipsum.</div>
+            <div class="textdiv">Lorem, ipsum.</div>
+            <div class="textdiv">Lorem, ipsum.</div>
+            <div class="textdiv">Lorem, ipsum.</div>
+            <div class="textdiv">Lorem, ipsum.</div>
+          </div>
+
+          <div class="div" id="div3">
+            <span>Products</span>
+
+            <div class="div3text" id="firstdiv3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+            <div class="div3text">Lorem, ipsum.</div>
+
+          </div>
+
+          <div class="div" id="div4">
+            <span>Support</span>
+
+            <div class="div4text" id="firstdiv4text">Lorem, ipsum.</div>
+            <div class="div4text">Lorem, ipsum.</div>
+            <div class="div4text">Lorem, ipsum.</div>
+
+
+          </div>
+
+          <div class="div" id="div5">
+            <span>Help & Info</span>
+
+            <div class="div5text" id="firstdiv5text">Lorem, ipsum.</div>
+            <div class="div5text">Lorem, ipsum.</div>
+            <div class="div5text">Lorem, ipsum.</div>
+            <div class="div5text">Lorem, ipsum.</div>
+            <div class="div5text">Lorem, ipsum.</div>
+
+          </div>
+
+        </div>
+
+          <div class="register">
+            <div class="inputtext" id="inputtext1">Newsletter Sign Up</div>
+
+            <div class="inputtext">Receive our latest updates about our products & promotions.</div>
+
+            <div class="input">
+              <input id="mail" type="email" placeholder="Email address">
+              <button>subscribe</button>
+            </div>
+
+          </div>
+
+          <hr>
+          <div id="reserve">© 2023 Cello World.All Rights Reserved.</div>
+
+        </footer>
+
+      </div>
+
     </div>
   </body>
 </html>
