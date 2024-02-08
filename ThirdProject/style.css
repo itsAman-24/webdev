@@ -105,7 +105,7 @@ html {
   flex-direction: row;
   justify-content: space-around;
   color: black;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .secondposition {
@@ -142,8 +142,9 @@ html {
 
 .introText {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
-  border: n;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* border: n; */
 }
 
 img {
@@ -188,7 +189,7 @@ img {
   border-radius: 0.8rem;
 }
 
-button {
+.addToCard button {
   height: 4.7rem;
   color: rgb(248, 246, 246);
   font-size: medium;
@@ -201,10 +202,10 @@ button {
   border: none;
 }
 
-button:hover {
+.addToCard button:hover {
   color: rgb(13, 1, 1);
   cursor: pointer;
-  background-color: rgb(248, 241, 240);
+  background-color: white;
   border: 0.2rem solid red;
 }
 
@@ -448,7 +449,7 @@ img:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  font-size: x-large;
+  font-size: 2rem;
 }
 
 footer {
@@ -475,32 +476,32 @@ footer {
 
 #div1 {
   /* border: .1rem solid black; */
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   margin-left: 2rem;
   height: 50rem;
   width: 45rem;
 }
 #div2 {
   /* border: .1rem solid black; */
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   height: 50rem;
   width: 30rem;
 }
 #div3 {
   /* border: .1rem solid black; */
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   height: 50rem;
   width: 30rem;
 }
 #div4 {
   /* border: .1rem solid black; */
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   height: 50rem;
   width: 30rem;
 }
 #div5 {
   /* border: .1rem solid black; */
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   height: 50rem;
   width: 30rem;
 }
@@ -513,7 +514,7 @@ footer {
 }
 
 #innerdiv1 {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .tutu {
@@ -535,7 +536,7 @@ footer {
 }
 
 #textdiv1 {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .div3text {
@@ -545,7 +546,7 @@ footer {
 }
 
 #firstdiv3text {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .div4text {
@@ -555,7 +556,7 @@ footer {
 }
 
 #firstdiv4text {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .div5text {
@@ -565,13 +566,13 @@ footer {
 }
 
 #firstdiv5text {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .register {
   color: white;
   /* border: .2rem solid green; */
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 2rem;
   padding-left: 0.5rem;
 }
@@ -590,10 +591,16 @@ footer {
   font-size: large;
 }
 
-footer button {
-  height: 4rem;
+.register .input button {
+  height: 5rem;
   width: 9rem;
+  color: rgb(248, 246, 246);
+  font-size: medium;
+  font-weight: bold;
   background-color: #eb0d0d;
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+  border: none;
 }
 
 footer .input {
@@ -606,10 +613,6 @@ footer .input {
   color: white;
   font-size: 1.8rem;
   margin-top: 5rem;
-}
-
-.footerdiv div {
-  text-decoration: underline;
 }
 
 hr {
