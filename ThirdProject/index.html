@@ -1,319 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      src="https://kit.fontawesome.com/30de586aff.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cello World</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="containerDiv">
-      <div class="navbar" id="navigation">
-        <div class="FirstInnerNavBar">
-          <div class="navitem" id="tag">cello</div>
-          <div><input type="text" id="search" placeholder="Search" /></div>
-
-            <div class="star" id="star1"><i class="fa-regular fa-user"></i></div>
-            <div class="star" id="star2"><i class="fa-regular fa-heart"></i></div>
-            <div class="star" id="star3"><i class="fa-solid fa-cart-shopping"></i></div>
-            <span class="corporate" id="corporateText">Corporate</span>
-          
-        </div>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Do you wanna go out with me?</h1>
       </div>
-       
-      <div class="position">
-        <div class="firstposition">
-          <div class="text">DRINKWARE</div>
-          <div class="text">DINNERWARE</div>
-          <div class="text">LUNCHBOXES</div>
-          <div class="text">CASSEROLES</div>
-          <div class="text">JARS&CONTAINERS</div>
-          <div class="text">BAKEWARE</div>
-          <div class="text">KITCHENAPPLIANCES</div>
-          <div class="text">COOKWARE</div>
-          <div class="text">CLEANINGSUPPLIES</div>
-        </div>
-      <div class="fillcolor">
-      <div class="secondposition">
-          <div class="introText">CELLO KIDSBEE</div>
-          <div class="introText">BUILD YOUR KITCHEN</div>
-          <div class="introText">PERSONALISATION</div>
-          <div class="introText">GIFT</div>
-          <div class="introText">SAKE</div>
-          <div class="introText">CELLO DIARIES</div>
-        </div>
+      <p>
+        <a href="https://www.instagram.com/ig_am.an/">@ig_am.an</a>
+      </p>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
       </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+  var x =
+    Math.random() *
+    (window.innerWidth - document.getElementById("noButton").offsetWidth);
+  var y =
+    Math.random() *
+    (window.innerHeight - document.getElementById("noButton").offsetHeight);
+  document.getElementById("noButton").style.left = `${x}px`;
+  document.getElementById("noButton").style.top = `${y}px`;
+}
+
+        </script>
       </div>
-
-      <div class="intro" id="introduction">
-
-        <img src="https://celloworld.com/cdn/shop/files/FLASK-BANNER-1880-x-720PX_GIF_a2e3bb32-d692-44a5-8ba1-892c924ab0af.gif?v=1693039209&width=2000" alt="" />
-      </div>
-
-      <div class="bestSeller" id="best">
-        <div class="innerbest" id="firstBest">Best Sellers</div>
-
-        <div class="innerbest" id="secondBest">
-
-          <div class="addToCard">
-            <!-- <img id="hoverimg" src="./Assests/saucepan.jpg" alt=""> -->
-            <img class="img1" src="./Assests/bottle.jpg" alt="" />
-            <button>QUICK ADD</button>
-            <div class="cardDetail">
-              <div class="details" id="firstDetail">
-                Lorem ipsum dolor sit hello 750ml
-              </div>
-              <div class="details" id="secondDetail">
-                <div class="discount" id="discountedprice">$49.3</div>
-                <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted">SAVE $9</div>
-              </div>
-              <div class="details" id="thirdDetail">
-                <div class="color" id="green"></div>
-                <div class="color" id="blue"></div>
-                <div class="color" id="black"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="addToCard">
-            <img class="img1" src="./Assests/classicbottle.jpg" alt="" />
-            <button>QUICK ADD</button>
-            <div class="cardDetail">
-              <div class="details" id="firstDetail">
-                Lorem ipsum dolor sit hello 750ml
-              </div>
-              <div class="details" id="secondDetail">
-                <div class="discount" id="discountedprice">$49.3</div>
-                <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted">SAVE $9</div>
-              </div>
-              <div class="details" id="thirdDetail">
-                <div class="color" id="green"></div>
-                <div class="color" id="blue"></div>
-                <div class="color" id="black"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="addToCard">
-            <img class="img1" src="./Assests/desert.jpg" alt="" />
-            <button>QUICK ADD</button>
-            <div class="cardDetail">
-              <div class="details" id="firstDetail">
-                Lorem ipsum dolor sit hello 750ml
-              </div>
-              <div class="details" id="secondDetail">
-                <div class="discount" id="discountedprice">$49.3</div>
-                <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted">SAVE $9</div>
-              </div>
-              <div class="details" id="thirdDetail">
-                <div class="color" id="green"></div>
-                <div class="color" id="blue"></div>
-                <div class="color" id="black"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="addToCard">
-            <img class="img1" src="./Assests/grinder.jpg" alt="" />
-            <button>QUICK ADD</button>
-            <div class="cardDetail">
-              <div class="details" id="firstDetail">
-                Lorem ipsum dolor sit hello 750ml
-              </div>
-              <div class="details" id="secondDetail">
-                <div class="discount" id="discountedprice">$49.3</div>
-                <div class="discount" id="actualprice">$40.3</div>
-                <div class="discount" id="discounted">SAVE $9</div>
-              </div>
-              <div class="details" id="thirdDetail">
-                <div class="color" id="green"></div>
-                <div class="color" id="blue"></div>
-                <div class="color" id="black"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="collage">
-        <div class="firstPart">
-          <span>Shop by Category</span>
-        </div>
-
-        <div class="secondPart">
-          <div class="firstimgRow">
-            <div class="check"> <img src="./Assests/candyjar.jpg" alt="" /> </div>
-            <div class="check"> <img src="./Assests/plates.jpg" alt="" /> </div>
-            <div class="check"> <img src="./Assests/steelbottle.jpg" alt="" /> </div>
-          </div>
-
-          <div class="secondimgRow">
-            <div class="check"> <img src="./Assests/folk.jpg" alt="" /> </div>
-            <div class="check"> <img src="./Assests/desert.jpg" alt="" /> </div>
-            <div class="check"> <img src="./Assests/grinder.jpg" alt="" /> </div>
-          </div>
-
-          <div class="thirdimgRow">
-            <div class="check"> <img src="./Assests/icecream.jpg" alt="" /> </div>
-            <div class="check"> <img src="./Assests/bottle.jpg" alt="" /> </div>
-            <div class="check"> <img src="./Assests/saucepan.jpg" alt="" /> </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="shopthelook">
-        <div class="firsttext">Shop the Look</div>
-          <div class="secondimg">
-            <img src="./Assests/saucepan.jpg" alt="">
-            <img src="./Assests/utansils.jpg" alt="">
-            <img src="./Assests/cup.jpg" alt="">
-            <img src="./Assests/juiceBottles.jpg" alt="">
-
-            <div class="icon">
-              <div class="icon1"> <i class="fa fa-long-arrow-up" ></i> </div>
-              <div class="icon2"> <i class="fa fa-user-circle-o" ></i> </div>
-              <div class="icon3"> <i class="fa fa-heart-o" ></i> </div>
-            </div>
-            
-            </div>
-
-            <div class="thirdtext">
-              <div class="text1">Lorem, ipsum.</div>
-              <div class="text2">Lorem, ipsum dolor.</div>
-              <div class="text3">Lorem, ipsum.</div>
-              <div class="text4">Lorem ipsum dolor sit.</div>
-            </div>
-        </div>
-
-
-        <div class="giftarea">
-          <div class="gift">
-            <img src="https://celloworld.com/cdn/shop/files/GIF-NEW_8a56b34a-b420-4c7d-9b7a-1f018ef8c7de.gif?v=1696922461&width=2000" alt="">
-          </div>
-
-          <div class="textarea">
-             <div class="gifttext">Free shipping on order above $100</div>
-             <div class="gifttext">Lorem, ipsum dolor.</div>
-             <div class="gifttext">Lorem, ipsum.</div>
-             <div class="gifttext">Lorem, ipsum dolor.</div>
-          </div>
-
-        </div>
-
-        <footer>
-          <div class="footerdiv">
-          <div class="div" id="div1">
-            <span>For Order related Queries</span>
-
-            <div class="innerdiv" id="innerdiv1">
-              <i class="fa fa-calendar"></i>
-              <div class="tutu">Monday-Friday</div>
-            </div>
-
-            <div class="innerdiv" id="innerdiv2">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              <div class="tutu">9:30 AM to 6:00 PM</div> 
-            </div>
-
-            <div class="innerdiv" id="innerdiv3">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <div class="tutu underline">7400001965</div>
-            </div>
-
-            <div class="innerdiv" id="innerdiv4">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <div class="tutu underline">support@celloworld.com</div>
-            </div>
-
-            <div class="innerdiv" id="innerdiv5">
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              
-            </div>
-
-
-          </div>
-
-          <div class="div" id="div2">
-            <span>Explore</span>
-
-            <div class="textdiv" id="textdiv1">Build your Kitchen</div>
-            <div class="textdiv">Lorem, ipsum.</div>
-            <div class="textdiv">Lorem, ipsum.</div>
-            <div class="textdiv">Lorem, ipsum.</div>
-            <div class="textdiv">Lorem, ipsum.</div>
-            <div class="textdiv">Lorem, ipsum.</div>
-          </div>
-
-          <div class="div" id="div3">
-            <span>Products</span>
-
-            <div class="div3text" id="firstdiv3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-            <div class="div3text">Lorem, ipsum.</div>
-
-          </div>
-
-          <div class="div" id="div4">
-            <span>Support</span>
-
-            <div class="div4text" id="firstdiv4text">Lorem, ipsum.</div>
-            <div class="div4text">Lorem, ipsum.</div>
-            <div class="div4text">Lorem, ipsum.</div>
-
-
-          </div>
-
-          <div class="div" id="div5">
-            <span>Help & Info</span>
-
-            <div class="div5text" id="firstdiv5text">Lorem, ipsum.</div>
-            <div class="div5text">Lorem, ipsum.</div>
-            <div class="div5text">Lorem, ipsum.</div>
-            <div class="div5text">Lorem, ipsum.</div>
-            <div class="div5text">Lorem, ipsum.</div>
-
-          </div>
-
-        </div>
-          <div class="register">
-            <div class="inputtext" id="inputtext1">Newsletter Sign Up</div>
-
-            <div class="inputtext">Receive our latest updates about our products & promotions.</div>
-
-            <div class="input">
-              <input id="mail" type="email" placeholder="Email address">
-              <button>subscribe</button>
-            </div>
-
-          </div>
-          
-          
-          <hr>
-          <div id="reserve">© 2023 Cello World.All Rights Reserved.</div>
-
-        </footer>
-
-      </div>
-
     </div>
   </body>
 </html>

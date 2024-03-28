@@ -1,0 +1,702 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  .containerDiv{
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .navbar {
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 8.3rem;
+  }
+  
+  .star,.corporate{
+    margin: .3rem;
+    margin-left: 7rem;
+    /* border: 1px solid black; */
+  }
+  
+  #star1{
+    position: absolute;
+    top: 2.5rem;
+    right: 24rem;
+  }
+  
+  #star2{
+    position: absolute;
+    top: 2.5rem;
+    right: 19rem;
+  }
+  
+  #star3{
+    position: absolute;
+    top: 2.5rem;
+    right: 14rem;
+  }
+  
+  #corporateText{
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+  }
+  
+  #search {
+    margin-left: 8rem;
+    width: 80rem;
+    height: 5rem;
+    margin-top: 2rem;
+    border-radius: 3.5rem;
+    border: 0.3rem solid rgb(165, 163, 163);
+    color: rgb(21, 21, 21);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 2rem;
+  }
+  
+  #tag {
+    background-color: red;
+    padding-top: 1.3rem;
+    color: white;
+    font-size: 4rem;
+    margin-left: 3.5rem;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+  }
+  
+  /* #icons {
+    border: 0.1rem solid black;
+    margin-left: 20rem;
+    width: 35rem;
+    height: 6rem;
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  } */
+  
+  .star {
+    font-size: x-large;
+    margin-top: 1.2rem;
+  }
+  
+  .star:hover {
+    font-size: xx-large;
+  }
+  
+  #corporateText {
+    font-size: 2rem;
+  }
+  
+  .FirstInnerNavBar {
+    background: linear-gradient(4deg, green, rgb(244, 244, 247), orange);
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+  
+  .position {
+    /* border: 0.2rem solid black; */
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    position: sticky; top:0;
+    background-color: white;
+    z-index: 20000000;
+    width: 100%;
+  }
+  
+  .firstposition {
+    /* border: 0.2rem solid rgb(121, 72, 72); */
+    margin: 0.2rem;
+    height: 2em;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    font-size: 1.7rem;
+  }
+  
+  .secondposition {
+    /* border: 0.2rem solid rgb(71, 27, 27); */
+    width: 90rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  
+  .fillcolor{
+    /* border: .1rem solid rgb(9, 6, 1); */
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .intro {
+    margin-top: 0rem;
+    height: 57rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 0.2rem solid green; */
+  }
+  
+  .introText {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* border: n; */
+  }
+  
+  img {
+    width: 100vw;
+    height: 100%;
+  }
+  
+  #firstintro {
+    border: none;
+  }
+  
+  .bestSeller {
+    width: 100%;
+    /* border: 0.2rem solid red; */
+    height: 78rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #firstBest {
+    /* border: 0.1rem solid black; */
+    width: 100%;
+    height: 13rem;
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 2.6rem;
+  }
+  
+  #secondBest {
+    display: flex;
+    /* border: 0.1rem solid black; */
+    height: 65rem;
+  }
+  
+  .addToCard {
+    background-color: white;
+    background: linear-gradient(198deg, white, rgb(237, 198, 126));
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.4rem 0.4rem 6rem rgb(85, 88, 90);
+    margin: 0.9rem;
+    border-radius: 0.8rem;
+    width: 100%;
+  
+  }
+  
+  .addToCard button {
+    height: 4.7rem;
+    color: rgb(248, 246, 246);
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(80, 12, 4);
+    margin: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    border-radius: 1rem;
+    border: none;
+    width: auto;
+  }
+  
+  .addToCard button:hover {
+    color: rgb(13, 1, 1);
+    cursor: pointer;
+    background-color: white;
+    /* border: 0.2rem solid red; */
+  }
+  
+  .img1 {
+    height: 36rem;
+    /* border-radius: 4rem; */
+    padding: 1rem;
+  }
+  
+  img:hover {
+    image-rendering: crisp-edges;
+    cursor: pointer;
+  }
+  
+  .cardDetail {
+    margin: 0.2rem;
+    margin-top: 2.19rem;
+    /* border: .2rem solid green; */
+    height: 16rem;
+  }
+  
+  .details {
+    margin: 1rem;
+    /* border: .1rem solid rgb(98, 98, 17); */
+    height: 3rem;
+  }
+  
+  #firstDetail {
+    font-size: 1.9rem;
+    padding: 0.4rem;
+  }
+  
+  #secondDetail {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.2rem;
+  }
+  
+  #thirdDetail {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .discount {
+    /* border: .1rem solid red; */
+    width: 8rem;
+    height: 2.9rem;
+  }
+  
+  #discountedprice {
+    text-decoration: line-through;
+    width: 6rem;
+  }
+  
+  #actualprice {
+    margin-left: 1rem;
+    width: 6rem;
+  }
+  
+  #discounted {
+    margin-left: 3rem;
+    background-color: rgb(238, 55, 55);
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    padding-top: 0.4rem;
+  }
+  
+  .color {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 2rem;
+    margin: 0.6rem;
+    border: 0.1rem solid rgb(11, 0, 0);
+  }
+  
+  #green {
+    background-color: green;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #black {
+    background-color: black;
+  }
+  
+  .SecondInnerNavBar {
+    position: sticky;
+  }
+  
+  .collage {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    height: 160rem;
+    /* border: 0.1rem solid aqua; */
+    max-width: 100%;
+  }
+  
+  .secondPart img {
+    height: 30rem;
+    width: 35rem;
+    margin: 1.3rem;
+    /* border-radius: 1.5rem; */
+  }
+  
+  .collage .firstPart {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+  }
+  
+  .collage .firstPart span {
+    padding-top: 2rem;
+    font-size: 6rem;
+  }
+  
+  .collage .secondPart {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+    margin-top: 5rem;
+  }
+  
+  .firstimgRow, .secondimgRow, .thirdimgRow{ 
+    display: flex;
+    flex-direction: row;
+    /* border: .2rem solid red; */
+    height: 50rem;
+    width: 100%;
+  }
+  
+  .check{
+    /* border: .2rem solid red; */
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+  }
+  
+  .check img {
+    margin: auto;
+    width: 100%;
+    height: 50rem;
+    display: block;
+    transition: transform 0.7s;
+    transition-delay: 0.1s;
+  }
+  
+  .check:hover img{
+    transform: scale(1.1);
+  }
+  
+  .secondimg {
+    display: flex;
+    flex-direction: row;
+    height: 50rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+  }
+  
+  .secondimg img {
+    margin: 0.7rem;
+    width: 35rem;
+  }
+  
+  .firsttext {
+    text-align: center;
+    font-size: 6rem;
+  }
+  
+  .shopthelook {
+    margin-top: 9rem;
+    /* border: .2rem solid red; */
+  }
+  .secondimg .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 13rem;
+    margin-top: 10rem;
+    margin-right: 2rem;
+    font-size: x-large;
+    position: fixed; top: 14rem; right: 0;
+    border-radius: .5rem;
+    border: 0.01rem solid grey;
+  }
+  
+  .icon1,
+  .icon2,
+  .icon3 {
+    border: 0.01rem solid grey;
+    background-color: white;
+    padding: 0.5rem;
+    width: 4rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon1:hover {
+    background-color: grey;
+    font-size: xx-large;
+    cursor: pointer;
+  }
+  
+  .icon2:hover {
+    background-color: grey;
+    font-size: xx-large;
+    cursor: pointer;
+  }
+  
+  .icon3:hover {
+    background-color: grey;
+    font-size: xx-large;
+    cursor: pointer;
+  }
+  
+  .thirdtext {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+    margin-top: 1rem;
+  }
+  
+  .text1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .text2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .text3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .text4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .giftarea {
+    height: 73rem;
+    /* border: .2rem solid red; */
+    margin-top: 1rem;
+  }
+  
+  .gift {
+    /* border: .2rem solid black; */
+    margin-top: 1rem;
+  }
+  
+  .textarea {
+    margin-top: 1rem;
+    background-color: rgb(180, 178, 178);
+    height: 13rem;
+    /* border: .2rem solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  footer {
+    background-color: rgb(75, 75, 75);
+    height: 80rem;
+    margin-top: 0;
+  }
+  
+  .footerdiv {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(92, 91, 91);
+    /* border: .2rem solid red; */
+    height: 48rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .div {
+    margin-top: 5rem;
+    margin-left: 7rem;
+  }
+  
+  #div1 {
+    /* border: .1rem solid black; */
+    font-size: 2.3rem;
+    margin-left: 2rem;
+    height: 50rem;
+    width: 45rem;
+  }
+  #div2 {
+    /* border: .1rem solid black; */
+    font-size: 2.3rem;
+    height: 50rem;
+    width: 30rem;
+  }
+  #div3 {
+    /* border: .1rem solid black; */
+    font-size: 2.3rem;
+    height: 50rem;
+    width: 30rem;
+  }
+  #div4 {
+    /* border: .1rem solid black; */
+    font-size: 2.3rem;
+    height: 50rem;
+    width: 30rem;
+  }
+  #div5 {
+    /* border: .1rem solid black; */
+    font-size: 2.3rem;
+    height: 50rem;
+    width: 30rem;
+  }
+  
+  .innerdiv {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #innerdiv1 {
+    margin-top: 4rem;
+  }
+  
+  .tutu {
+    margin-left: 1rem;
+  }
+  
+  #innerdiv5 i {
+    margin: 1.5rem;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .textdiv {
+    font-size: 1.8rem;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  
+  #textdiv1 {
+    margin-top: 4rem;
+  }
+  
+  .div3text {
+    font-size: 1.8rem;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  
+  #firstdiv3text {
+    margin-top: 4rem;
+  }
+  
+  .div4text {
+    font-size: 1.8rem;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  
+  #firstdiv4text {
+    margin-top: 4rem;
+  }
+  
+  .div5text {
+    font-size: 1.8rem;
+    margin: 2rem;
+    margin-left: 0;
+  }
+  
+  #firstdiv5text {
+    margin-top: 4rem;
+  }
+  
+  .register {
+    color: white;
+    /* border: .2rem solid green; */
+    font-size: 1.7rem;
+    padding: 2rem;
+    padding-left: 0.5rem;
+  }
+  
+  #inputtext1 {
+    font-size: 2.8rem;
+  }
+  
+  .input input{
+    width: 30rem;
+    border-radius: .4rem;
+    border: none;
+  }
+  
+  #mail {
+    font-size: large;
+  }
+  
+  .register .input button {
+    height: 5rem;
+    width: 9rem;
+    color: rgb(248, 246, 246);
+    font-size: medium;
+    font-weight: bold;
+    background-color: #eb0d0d;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+  }
+  
+  footer .input {
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  #reserve {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+  }
+  
+  hr {
+    margin-top: 5rem;
+  }
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 800px) {
+  
+    .bestSeller{
+      height: 260rem;
+    }
+    #secondBest {
+      display: flex;
+      /* border: 0.1rem solid black; */
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      height: 200rem;
+    }
+  }
