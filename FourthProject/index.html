@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stone Paper Scissor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="header">
-        <p>Rock</p>
-        <p>Paper</p>
-        <p>Scissor</p>
+      <p>Rock</p>
+      <p>Paper</p>
+      <p>Scissor</p>
     </div>
 
-    <div class="body">
-        <img id="rock" class="img" src="assets/rock.jpg" alt="">
-        <img id="paper" class="img" src="assets/paper.jpg" alt="">
-        <img id="scissor" class="img" src="assets/scissors.png" alt="">
+    <div class="choose">
+      <div class="body" id="rock">
+        <img src="assets/rock.jpg" alt="" />
+      </div>
+
+      <div class="body" id="paper">
+        <img src="assets/paper.jpg" alt="" />
+      </div>
+
+      <div class="body" id="scissor">
+        <img src="assets/scissors.png" alt="" />
+      </div>
+    </div>
+
+    <div class="score">
+
+        <div id="yourScore">
+           <p>0</p>
+           <p id="you">You</p>
+        </div>
+
+        <div id="computer">
+            <p>0</p>
+            <p id="machine">Computer</p>
+        </div>
     
     </div>
 
+    <div class="message">
+      <div class="youWin">
+        <p>You won this round</p>
+      </div>
+      <div class="comWin">
+        <p>Computer won this round</p>
+      </div>
+      
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
