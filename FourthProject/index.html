@@ -13,16 +13,16 @@
       <p>Scissor</p>
     </div>
 
-    <div class="choose">
-      <div class="body" id="rock">
-        <img src="assets/rock.jpg" alt="" />
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="assets/rock.png" alt="" />
       </div>
 
-      <div class="body" id="paper">
-        <img src="assets/paper.jpg" alt="" />
+      <div class="choice" id="paper">
+        <img src="assets/paper.png" alt="" />
       </div>
 
-      <div class="body" id="scissor">
+      <div class="choice" id="scissor">
         <img src="assets/scissors.png" alt="" />
       </div>
     </div>
@@ -30,27 +30,22 @@
     <div class="score">
 
         <div id="yourScore">
-           <p>0</p>
+           <p id="guestScore">0</p>
            <p id="you">You</p>
         </div>
 
         <div id="computer">
-            <p>0</p>
-            <p id="machine">Computer</p>
+            <p id="machineScore">0</p>
+            <p id="machine">Comp</p>
         </div>
     
     </div>
 
     <div class="message">
-      <div class="youWin">
-        <p>You won this round</p>
-      </div>
-      <div class="comWin">
-        <p>Computer won this round</p>
-      </div>
-      
-    </div>
 
+      <p id="msg">Play your move</p>
+
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
