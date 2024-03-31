@@ -92,8 +92,9 @@ const playGame = (userChoice) => {
 
 }
 
+//EventHandler 
 choices.forEach((choice) => {
-    console.log(choice);
+    // console.log(choice);
     choice.addEventListener("click" , () => {
         let userChoice = choice.getAttribute("id");
         // console.log("choice was clicked" , userChoice);
