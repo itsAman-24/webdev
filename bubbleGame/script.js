@@ -1,6 +1,6 @@
 //function for creating multiple bubbles using for loop
 let makeBubble = () => {
-    let cluster = '<div class="bubble">5</div>';
+    let cluster = `<div class="bubble">${Math.floor(Math.random() * 10)}</div>`;
 
 for(let i = 1; i <= 180; i++) {
     let rdm = Math.floor(Math.random() * 10);
@@ -24,7 +24,7 @@ let setTimer = () => {
 
         else {
             clearInterval(timeInterval);   // using this to stop the setInterval's execution when time reaches to 0
-            document.querySelector("#pbtm").innerHTML = `<h2>GAME OVER</h2>`;
+            document.querySelector("#pbtm").innerHTML = `<h1>GAME OVER</h1>`;
         }
     
     } , 1000);
