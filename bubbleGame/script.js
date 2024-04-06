@@ -48,6 +48,8 @@ let setScore = () => {
     document.querySelector("#score").textContent = score;
 }
 
+//adding eventListner on the bubble that we clicked inside pbtm class
+
 document.querySelector("#pbtm").addEventListener("click" , (clickDetail) => {
     let clickedNum = Number(clickDetail.target.textContent);
     if(clickedNum === hitNum) {
