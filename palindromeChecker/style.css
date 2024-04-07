@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+form {
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+h1 {
+    margin-left: 1rem;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+#text {
+    height: 1.5rem;
+    background-color: azure;
+    border: .1rem solid black;
+    font-size: larger;
+}
+
+#submit {
+    margin-left: 2rem;
+    height: 1.8rem;
+    width: 5rem;
+    background-color: brown;
+    font-size: large;
+    border-radius: 1rem;
+}
