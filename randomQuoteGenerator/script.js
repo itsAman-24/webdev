@@ -15,6 +15,6 @@ let button = document.querySelector("#btn");
 let quoteArea = document.querySelector("#quote");
 
 button.addEventListener("click" , () => {
-    let index = Math.floor(Math.random() * 10);
+    let index = Math.floor(Math.random() * quotes.length);
     quoteArea.textContent = quotes[index];
 })
