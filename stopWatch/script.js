@@ -15,14 +15,17 @@ function timer() {
 
 startBtn.addEventListener("click" , startClock());
 
+//function for starting the clock
 function startClock() {
     timer.setInterval(timer, 1000);
 }
 
+//function for stopping the clock
 function stopClock() {
 
 }
 
+//function fot reseting the clock
 function resetClock() {
 
 }
