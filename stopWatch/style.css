@@ -5,7 +5,20 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: rgb(176, 245, 222);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -19,12 +32,14 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
     margin: 2rem;
-    margin-left: 6rem;
+    /* margin-left: 6rem; */
 }
 
 h3 {
     font-size: 4rem;
     margin: 1rem;
+    /* margin-left: 2rem; */
+    color: rgb(236, 131, 11);
 }
 
 #startBtn {
