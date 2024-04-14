@@ -18,6 +18,7 @@ function updateTimer() {
     timer.innerHTML = `${padStart(minute)} : ${padStart(second)}`;
 }
 
+//this function will increase the seconds count
 function timerfunc() {
     secInterval++;
     updateTimer();
