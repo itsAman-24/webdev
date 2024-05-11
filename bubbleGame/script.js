@@ -2,7 +2,7 @@
 let makeBubble = () => {
     let cluster = `<div class="bubble">${Math.floor(Math.random() * 10)}</div>`;
 
-for(let i = 1; i <= 180; i++) {
+for(let i = 1; i <= 101; i++) {
     let rdm = Math.floor(Math.random() * 10);
     cluster += `<div class="bubble">${rdm}</div>`;
 }
@@ -15,8 +15,8 @@ makeBubble();
 //creating arrow function for dynamic behaviour of timer
 let time = 60;
 
-let setTimer = () => {
-    let timeInterval = setInterval(function () {
+const  setTimer = () => {
+    const timeInterval = setInterval(function () {
         if(time > 0) {
             time--;
             document.querySelector("#timerVal").textContent = time;
@@ -51,10 +51,14 @@ let setScore = () => {
 //adding eventListner on the bubble that we clicked inside pbtm class
 
 document.querySelector("#pbtm").addEventListener("click" , (clickDetail) => {
-    let clickedNum = Number(clickDetail.target.textContent);
+    const clickedNum = Number(clickDetail.target.textContent);
     if(clickedNum === hitNum) {
         setScore();
         makeBubble();
         rdmHit();
+    }   
+
+    else {
+        navigator.vibrate([1000,500,2000]);
     }
 });
