@@ -5,10 +5,14 @@ const sound = document.querySelector("#sound");
 
 searchButton.addEventListener("click" , async() => {
     const inputedValue = document.querySelector("#textArea").value;
-    const response = await fetch(`${url}${inputedValue}`);
-    const JSON_value_Data = await response.json(); 
-    console.log(JSON_value_Data);
-    displayResult(JSON_value_Data , inputedValue);
+    try{
+        const response = await fetch(`${url}${inputedValue}`);
+        const JSON_value_Data = await response.json(); 
+        console.log(JSON_value_Data);
+        displayResult(JSON_value_Data , inputedValue);
+    } catch(err) {
+        console.log(err);
+    }
 
 });
 
@@ -29,15 +33,15 @@ function displayResult(JSON_value_Data , inputedValue) {
     </div>
 
     <p class="definition"> Meanings:-
-    1:  ${JSON_value_Data[0].meanings[0].definitions[1].definition} 
-    2:  ${JSON_value_Data[0].meanings[0].definitions[0].definition} 
+    1:  ${JSON_value_Data[0].meanings[0].definitions[0].definition} 
+   
     
     
     </p>
 
     <p class="example"> Examples:-
     1:  ${JSON_value_Data[0].meanings[0].definitions[0].example} 
-    2:  ${JSON_value_Data[0].meanings[0].definitions[1].example} 
+   
     </p>
     `;
 
