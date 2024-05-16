@@ -49,6 +49,7 @@ srtBtn.addEventListener("click" , () => {
         newDiv.classList.add('jsStyle');
         newDiv.innerHTML = `
         <div class="item">
+        <i id="icon" class="fa-solid fa-circle-info" icon_Value =' ${JSON.stringify(value)}'</i>
             <img src="${value.image}">
                 <div class="info">
                     <span>"Name = ${value.name}"</span>
@@ -58,24 +59,25 @@ srtBtn.addEventListener("click" , () => {
                 <div class="buyNow">
                     <button>Buy now</button>
                 </div>
-            <i onclick="showDetails(${value})" id="icon" class="fa-solid fa-circle-info" script></i>
 
         </div>
         `;
         container.appendChild(newDiv);
         // console.log(value);
         // debugger
-        document.querySelector("i");
-        i.addEventListener("click",() => {
-            console.log("hiiii brrrrr");
+        document.querySelector(".fa-circle-info").forEach((icon) => {
+            icon.addEventListener("click" , (event) => {
+                const Clicked_icon_value = JSON.parse(event.target.getAttribute('icon_Value'));
+                showDetails(Clicked_icon_value);
+            })
         })
-
+        
     });
 });
 
 function showDetails(value) {
-    debugger
+    // debugger
     console.log(value);
-    debugger
+    // debugger
 }
 
