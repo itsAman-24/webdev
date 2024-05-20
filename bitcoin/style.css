@@ -7,7 +7,8 @@
 body {
     max-height: 100%;
     max-width: 100%;
-    background-image: url("https://media.tenor.com/images/880164395f7c28340e1fd53fc96f6b9d/tenor.gif");
+    /* background-image: url("https://media.tenor.com/images/880164395f7c28340e1fd53fc96f6b9d/tenor.gif"); */
+    background-image: url("https://giffiles.alphacoders.com/207/207805.gif");
 }
 
 .container {
@@ -17,6 +18,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2rem;  
+    justify-content:flex-start;
+    margin-top: .2rem;
   
 }
 
@@ -41,32 +44,37 @@ body {
     display: flex;
     flex-direction: column;
     margin: 4rem;
-    margin-left: 4.3rem;
 }
 
 
-.item {
+.bitcoinItem {
     display: flex;
     flex-direction: column;
-    background-color: rgb(79, 78, 78);
+    background: linear-gradient(rgba(243, 240, 243, 0.687) 35% ,rgba(140, 174, 242, 0.733) 80%);
     width: 22rem;
-    height: 20rem;
+    height: 30rem;
     margin: 0;
     padding: 0;
     border-radius: 3rem;
+    border: .1rem solid black;
 }
 
-.item img {
+.bitcoinItem img {
     width: 10rem;
     height: 10rem;
     display: inline;
-    /* text-align: center; */
-    margin: auto;
+    margin: 2rem 6rem;
 }
 
-.item .info {
+.bitcoinItem p {
+    font-size: large;
+    position: relative;
+    left: 1rem;
+    top: 3.5rem;
+}
+
+.bitcoinItem .info {
     padding: .2rem;
-    /* gap: 1rem; */
     display: flex;
     justify-content: space-around;
     font-size: large;
@@ -75,32 +83,90 @@ body {
 #icon {
     position: relative;
     left: 1rem;
-    top: 2rem;
+    top: .5rem;
+    font-size: x-large;
 }
 
 #icon:hover {
     cursor: pointer;
 }
 
-.item .buyNow {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: .5rem;
-    /* display: flex; */
-    /* justify-content: space-around; */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1rem;
+    /* padding: 1rem; */
 }
 
-.item .buyNow button:hover {
+.info span {
+    font-size: large;
+    font-weight: bold;
+}
+
+.bitcoinItem .buyNow {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.bitcoinItem .buyNow button:hover {
     cursor: pointer;
     background-color: rgb(11, 11, 10);
     color: white;
+    width: 8rem;
+    height: 2.5rem;
 }
 
-.item .buyNow button {
+.bitcoinItem .buyNow button {
     width: 6rem;
     height: 2.5rem;
     border-radius: 4rem;
     border: .1rem solid black;
-    background-color: rgb(117, 117, 117);
-    /* margin: 3rem; */
+    background-color: rgb(15, 0, 0);
+    color: white;
+}
+
+.details_Style {
+    background: linear-gradient(rgb(180, 208, 248) 105% ,rgb(233, 233, 234) 100%);
+    color: rgb(10, 10, 10);
+    width: 22rem;
+    height: 30rem;
+    border-radius: 3rem;
+    transition-timing-function: ease-in-out;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 1rem;
+    
+}
+
+.detail_Design {
+    height: 36rem;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.closeDetails {
+    margin: 6rem 7.5rem;
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: black;
+    border: .1rem solid black;
+    color: white;
+}
+
+.closeDetails:hover {
+    cursor: pointer;
+}
+
+#moreDetail {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
