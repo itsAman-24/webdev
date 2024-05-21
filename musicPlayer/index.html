@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
         <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <img src="https://pagalworld.ink/siteuploads/thumb/sft25/12024_resize2x_200x200.webp" class="song-img">
+        <h1>Sajni ree</h1>
+        <p>Arijit Singh</p>
+
+        <!-- (controls ) attribute is used with audio tag to see the real song track-->
+        <audio id="song">
+            <source src="./music/Sajni-(PagalWorld.Ink).mp3" type="audio/mpeg">
+        </audio>
+
+        <input type="range" value="0" id="progress">
+
+         <div class="control">
+            <div><i onclick="backWard()" class="fa-solid fa-backward" id="backIcon"></i></div>
+            <div><i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i onclick="forWard()" class="fa-solid fa-forward" id="forwardIcon"></i></div>
+         </div>
+
 
         </div>
     </div>

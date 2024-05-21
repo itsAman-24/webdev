@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     background-color: black;
-    color: white;
+    /* color: white; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,100 @@
 
 .music-player {
     width: 30rem;
-    height: 35rem;
-    background-color: pink;
+    /* height: 40rem; */
+    background: #ffe0e9;
     border-radius: .4rem;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+nav .circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    color: #f53192;
+    font-size: larger;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+
+.song-img {
+    width: 15rem;
+    height: 15rem;
+    border: .7rem solid white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    box-shadow: 0 40px 60px rgba(255, 26, 26, 0.22);
+}
+
+.music-player h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.music-player p {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: .5rem;
+    background: #f53192;
+    border-radius: .4rem;
+    cursor: pointer;
+    margin: 4rem 0;
+    margin-top: 3rem;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #f53192;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: .6rem solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control div {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    margin-top: 0;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.control div:nth-child(2) {
+    transform: scale(1.4);
+    background: #dc4a93;
+    color: #fff;
 }
