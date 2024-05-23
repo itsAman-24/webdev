@@ -22,6 +22,10 @@
     border-radius: .4rem;
     padding: 2rem 3rem;
     text-align: center;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP._d6OAArRsmRYp-QSHC23jwHaFj&pid=Api&P=0&h=220');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: .2rem solid white;
 }
 
 nav {
@@ -31,12 +35,12 @@ nav {
 }
 
 nav .circle {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
-    line-height: 3rem;
+    line-height: 3.5rem;
     color: #f53192;
-    font-size: larger;
+    font-size: x-large;
     background: #fff;
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
     cursor: pointer;
@@ -55,14 +59,14 @@ nav .circle {
 .music-player h1 {
     font-size: 2.3rem;
     font-weight: 600;
-    color: #333;
+    color: #fefcfc;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .music-player p {
     font-size: 1.4rem;
-    color: #333;
+    color: #fbf9f9;
 }
 
 #progress {
