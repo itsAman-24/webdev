@@ -2,42 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
     max-height: 100%;
     max-width: 100%;
-    background-image: url("https://giffiles.alphacoders.com/207/207805.gif");
+    background: url("https://wallpaperaccess.com/full/395716.jpg");
+    /* background-size: cover; */
+    background-blend-mode:lighten;
+    /* display: flex; */
+    
+
 }
 
 .container {
-    height: 100%;
-    max-width: 100%;
+    /* height: 100%; */
+    max-width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2rem;  
-    justify-content:flex-start;
-    margin-top: .2rem;
+    margin: 1rem;  
+    justify-content: space-around;
+    margin-top: 10rem;
   
 }
 
-#srtBtn {
-    width: 50rem;
-    height: 4rem;
-    position: absolute;
-    top: 88%;
-    left: 25%;
-    border: .3rem solid black;
-    border-radius: 2rem;
+.wrapper {
+    display: flex;
+    margin-top: 0rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    gap: 6rem;
+    background-color: rgba(0, 0, 0, 0.927);
+    text-align: center;
+    color: white;
+    align-items: center;
+    position: fixed;
+}
+
+.navbar .logo img {
+    width: 17rem;
+    height: 8rem;
+}
+
+.navbar .navSection {
+    display: flex;
+    gap: 3rem;
+    font-size: x-large;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+.navbar .navInfo {
+    width: 6rem;
+    height: 2rem;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.navbar .navInfo:hover {
+    background-color: aquamarine;
+    color: black;
+    border-radius: 1rem;
+    transform: scale(1.05); /* Slightly enlarges the element */
+    text-align: center;
+}
+
+
+.navbar .cartLogo {
+    margin-left: 12rem;
     font-size: xx-large;
-    gap: 2rem;
-
+    cursor: pointer;
 }
 
-.srtBtn {
-    display: none;
-}
 
 .jsStyle {
     display: flex;
@@ -49,13 +88,14 @@ body {
 .bitcoinItem {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(243, 240, 243, 0.687) 35% ,rgba(140, 174, 242, 0.733) 80%);
+    background: linear-gradient(rgb(106, 104, 104) 35% ,rgba(187, 204, 240, 0.733) 80%);
     width: 22rem;
-    height: 30rem;
+    height: 30rem; 
     margin: 0;
     padding: 0;
     border-radius: 3rem;
-    border: .1rem solid black;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border: .2rem solid black;
 }
 
 .bitcoinItem img {
@@ -103,20 +143,19 @@ body {
     font-weight: bold;
 }
 
-.bitcoinItem .buyNow {
+.bitcoinItem .cartbtn {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
-.bitcoinItem .buyNow button:hover {
+.bitcoinItem .cartbtn button:hover {
     cursor: pointer;
-    background-color: rgb(11, 11, 10);
     color: white;
     width: 8rem;
     height: 2.5rem;
 }
 
-.bitcoinItem .buyNow button {
+.bitcoinItem .cartbtn button {
     width: 6rem;
     height: 2.5rem;
     border-radius: 4rem;
@@ -131,7 +170,7 @@ body {
     width: 22rem;
     height: 30rem;
     border-radius: 3rem;
-    transition-timing-function: ease-in-out;
+    /* transition-timing-function: ease-in-out; */
     font-size: larger;
     font-weight: bold;
     margin-top: 1rem;
@@ -141,6 +180,7 @@ body {
 .detail_Design {
     height: 36rem;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -174,4 +214,95 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+}
+
+
+.cartStyle {
+    /* margin: 1rem; */
+    text-align: center;
+    /* border-radius: 3rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.cartItem img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.cartItem .name {
+    margin-left: 0;
+}
+
+.cartItem {
+    width: 23rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: larger;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.cartContainerDesign {
+    background: rgb(61, 60, 60);
+    position: fixed;
+    left: 71rem;
+    top: 8.2rem;
+    overflow: scroll;
+    height: 44rem;
+    width: 25rem;
+}
+
+.cartItemDetails {
+    display: flex;
+    flex-direction: column;
+    padding-left: .5rem;
+}
+
+.cartItem button {
+    /* margin-top: 1rem; */
+    width: 6rem;
+    height: 1.6rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.deleteCartItemBtn {
+    width: 5rem;
+    height: 1.3rem;
+    background-color: rgb(44, 43, 43);
+    color: whitesmoke;
+}
+
+.closeCart {
+    width: 13rem;
+    height: 3.1rem;
+    position: fixed;
+    top: 46.4rem;
+    left: 84rem;
+    background-color: rgb(38, 33, 33);
+    font-size: x-large;
+    color: white;
+    border: none;
+}
+
+.orderTotal {
+    width: 13rem;
+    height: 3.1rem;
+    position: fixed;
+    top: 46.4rem;
+    left: 71rem;
+    background-color: rgb(109, 107, 107);
+    font-size: x-large;
+    color: white;
+    border: none;
+}
+
+.displayNone {
+    display: none;
 }
