@@ -18,7 +18,7 @@ body {
 
 .container {
     /* height: 100%; */
-    max-width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,14 +59,14 @@ body {
 .navbar .navInfo {
     width: 6rem;
     height: 2rem;
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, transform 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, transform 0.4s; /* Smooth transition */
 }
 
 .navbar .navInfo:hover {
-    background-color: aquamarine;
+    background-color: rgba(4, 212, 244, 0.92);
     color: black;
     border-radius: 1rem;
-    transform: scale(1.05); /* Slightly enlarges the element */
+    transform: scale(1.07); /* Slightly enlarges the element */
     text-align: center;
 }
 
@@ -88,13 +88,13 @@ body {
 .bitcoinItem {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgb(106, 104, 104) 35% ,rgba(187, 204, 240, 0.733) 80%);
+    background: linear-gradient(rgba(106, 104, 104, 0.902) 35% ,rgba(9, 104, 119, 0.678) 80%);
     width: 22rem;
     height: 30rem; 
     margin: 0;
     padding: 0;
     border-radius: 3rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 20px 50px rgba(122, 119, 116, 0.12), 0 60px 40px rgba(109, 19, 19, 0.24);;
     border: .2rem solid black;
 }
 
@@ -153,16 +153,47 @@ body {
     color: white;
     width: 8rem;
     height: 2.5rem;
+    background-color: rgb(32, 32, 32);
+    border: .1rem solid black;
+    transform: scale(1.08); /* Slightly enlarges the element */
 }
 
 .bitcoinItem .cartbtn button {
     width: 6rem;
     height: 2.5rem;
     border-radius: 4rem;
-    border: .1rem solid black;
+    border: none;
     background-color: rgb(15, 0, 0);
     color: white;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s, transform 0.5s; /* Smooth transition */
 }
+
+
+#popupMessage {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: #09f419;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+    font-size: larger;
+}
+
+#popupMessage.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+
 
 .details_Style {
     background: linear-gradient(rgb(180, 208, 248) 105% ,rgb(233, 233, 234) 100%);

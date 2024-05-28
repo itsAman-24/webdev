@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 const srtBtn = document.querySelector("#srtBtn");
 let cartContainer = document.querySelector(".cartContainer");
+const container = document.querySelector(".container");
 
 window.addEventListener("load", async () => {
 
@@ -8,7 +9,7 @@ window.addEventListener("load", async () => {
     const promise2_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=gecko_desc&per_page=10&page=2&sparkline=false&price_change_percentage=24h";
     const promise3_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=gecko_desc&per_page=10&page=3&sparkline=false&price_change_percentage=24h";
 
-    const container = document.querySelector(".container");
+    
     
     let combinedArray = [];
 
@@ -76,9 +77,24 @@ window.addEventListener("load", async () => {
         const cart = newDiv.querySelector(".cart");
 
         cart.addEventListener("click", (event) => {
-            const cart_data = JSON.parse(event.target.getAttribute('cart-data'));   
-            addToCart(cart_data);     // Function calling for adding item inside the cart
+            const cart_data = JSON.parse(event.target.getAttribute('cart-data'));
+            addToCart(cart_data); // Function calling for adding item inside the cart
+
+            const popup = document.getElementById('popupMessage');
+            popup.classList.add('show');
+            popup.classList.remove('hidden');
+
+            //setTimeout() is used to hide the pop message after 3 seconds
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => {
+                    popup.classList.add('hidden');
+                }, 500); // Match this duration with the transition time for smooth hiding
+            }, 3000);
+
+
         });
+        
     });
 });
 
@@ -129,10 +145,8 @@ async function showDetails(value, cardElement) {
     });
 }
 
-
- //It will keep the track of number of carts inside the cartContainer
- let cartItems = 0;
- let a = 0;
+ let cartItems = 0;    //It will keep the track of number of carts inside the cartContainer
+ let a = 0;            //It will be used to avoid the closing of cart section with the click on the addToCart
  let orderTotal = 0;
 //  let cartItemArray = []; // array to store the each cartItems inside it 
 
@@ -165,16 +179,8 @@ async function addToCart(value) {
     cartDiv.remove();
     cartItems--;
 
-    //If there is no cart inside cartContainer then disable the cartContainer itself
-    // if(cartItems == 0) {
-    //     cartContainer.classList.remove('cartContainerDesign');
-    // }
-
 });
 
-    
-    //adding the cartItem inside cartItemArray
-    // cartItemArray.push(cartDiv);
 }
 
 // Event Listner on the cartIcon 
@@ -185,13 +191,8 @@ const cartBtn = document.querySelector(".fa-cart-shopping");
 
 cartBtn.addEventListener("click" , () => {
     a++;
-    // if(cartItems === 0) {
-    //     cartContainer.classList.add("displayNone"); 
-    // }
-
-    // else {
-    // cartContainer.appendChild(cartItemArray);
-
+   
+    container.style.maxWidth = "70%";
     cartContainer.classList.remove("displayNone");
     cartContainer.classList.add('cartContainerDesign');
 
@@ -214,14 +215,9 @@ cartBtn.addEventListener("click" , () => {
 
         document.querySelector(".closeCart").addEventListener("click" , () => {
             cartContainer.classList.add("displayNone");
+            container.style.maxWidth = "100%";
         });
     
     
     
 })
-
-//Updating order total balance inside the cart
-
-// cartTotal.innerHTML = `
-// <div> Total: ${orderTotal} </div>
-// `
