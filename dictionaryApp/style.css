@@ -55,7 +55,7 @@ body {
    
 }
 
-#sound {
+#playSound {
   border: none;
   outline: none;
   width: 3rem;
@@ -63,7 +63,7 @@ body {
   background-color: white;
 }
 
-#sound:hover {
+#playSound:hover {
     cursor: pointer;
     background-color: rgba(144, 145, 146, 0.861);
 }
@@ -106,4 +106,9 @@ body {
     padding-left: 1rem;
     font-family: cursive;
     font-size: large;
+}
+
+#errordiv {
+    font-size: x-large;
+    font-weight: 500;
 }
